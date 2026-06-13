@@ -1,0 +1,321 @@
+{
+  "pdf_count": 9,
+  "pdfs": [
+    {
+      "bytes": 278811,
+      "final_url": "https://static1.squarespace.com/static/68c526c47df0e233531f6784/t/68d5ea51115bad5ece3ff8af/1758849617080/Ae+sound+sample+NSW+font.pdf",
+      "local_path": "source-assets/myphonicshandwritingbook.com/assets/www.myphonicshandwritingbook.com/Ae-sound-sample-NSW-font-c79f490ad3.pdf",
+      "name": "Ae-sound-sample-NSW-font.pdf",
+      "url": "https://www.myphonicshandwritingbook.com/s/Ae-sound-sample-NSW-font.pdf"
+    },
+    {
+      "bytes": 279189,
+      "final_url": "https://static1.squarespace.com/static/68c526c47df0e233531f6784/t/68d4a3d894456d436e3de5e7/1758766040643/ae+sound+sample.pdf",
+      "local_path": "source-assets/myphonicshandwritingbook.com/assets/www.myphonicshandwritingbook.com/ae-sound-sample-7ba9b513ca.pdf",
+      "name": "ae-sound-sample.pdf",
+      "url": "https://www.myphonicshandwritingbook.com/s/ae-sound-sample.pdf"
+    },
+    {
+      "bytes": 125056,
+      "final_url": "https://static1.squarespace.com/static/68c526c47df0e233531f6784/t/68d4a4bceb8b262d6b2a68b0/1758766268995/Book+1+sample.pdf",
+      "local_path": "source-assets/myphonicshandwritingbook.com/assets/www.myphonicshandwritingbook.com/Book-1-sample-b194b3a674.pdf",
+      "name": "Book-1-sample.pdf",
+      "url": "https://www.myphonicshandwritingbook.com/s/Book-1-sample.pdf"
+    },
+    {
+      "bytes": 45966,
+      "final_url": "https://static1.squarespace.com/static/68c526c47df0e233531f6784/t/6965826aeea3c21ba53d83cd/1768260202096/Book+A+Contents+Page.pdf",
+      "local_path": "source-assets/myphonicshandwritingbook.com/assets/www.myphonicshandwritingbook.com/Book-A-Contents-Page-bdae502ba7.pdf",
+      "name": "Book-A-Contents-Page.pdf",
+      "url": "https://www.myphonicshandwritingbook.com/s/Book-A-Contents-Page.pdf"
+    },
+    {
+      "bytes": 32373,
+      "final_url": "https://static1.squarespace.com/static/68c526c47df0e233531f6784/t/68d4afb82e3cff595e281b44/1758769080571/Book+B+Contents+page.pdf",
+      "local_path": "source-assets/myphonicshandwritingbook.com/assets/www.myphonicshandwritingbook.com/Book-B-Contents-page-kewh-bb8af61d0f.pdf",
+      "name": "Book-B-Contents-page-kewh.pdf",
+      "url": "https://www.myphonicshandwritingbook.com/s/Book-B-Contents-page-kewh.pdf"
+    },
+    {
+      "bytes": 44967,
+      "final_url": "https://static1.squarespace.com/static/68c526c47df0e233531f6784/t/68d4a5efa152ec62f272da75/1758766575036/Dotted+thirds+sample+NSW+font.pdf",
+      "local_path": "source-assets/myphonicshandwritingbook.com/assets/www.myphonicshandwritingbook.com/Dotted-thirds-sample-NSW-font-791a4d1064.pdf",
+      "name": "Dotted-thirds-sample-NSW-font.pdf",
+      "url": "https://www.myphonicshandwritingbook.com/s/Dotted-thirds-sample-NSW-font.pdf"
+    },
+    {
+      "bytes": 50070,
+      "final_url": "https://static1.squarespace.com/static/68c526c47df0e233531f6784/t/68d4a48c6d41d47ec28becb0/1758766220807/Dotted+thirds+Sample.pdf",
+      "local_path": "source-assets/myphonicshandwritingbook.com/assets/www.myphonicshandwritingbook.com/Dotted-thirds-Sample-9d90d4e758.pdf",
+      "name": "Dotted-thirds-Sample.pdf",
+      "url": "https://www.myphonicshandwritingbook.com/s/Dotted-thirds-Sample.pdf"
+    },
+    {
+      "bytes": 245421,
+      "final_url": "https://static1.squarespace.com/static/68c526c47df0e233531f6784/t/68d4a46ceb8b262d6b2a5000/1758766188462/How+to+set+up+the+learning+environment.pdf",
+      "local_path": "source-assets/myphonicshandwritingbook.com/assets/www.myphonicshandwritingbook.com/How-to-set-up-the-learning-environment-144d79ccf4.pdf",
+      "name": "How-to-set-up-the-learning-environment.pdf",
+      "url": "https://www.myphonicshandwritingbook.com/s/How-to-set-up-the-learning-environment.pdf"
+    },
+    {
+      "bytes": 125941,
+      "final_url": "https://static1.squarespace.com/static/68c526c47df0e233531f6784/t/68d4ab1dae2c0a57154788b4/1758767901152/yY+to+be+watermarked+Vic.pdf",
+      "local_path": "source-assets/myphonicshandwritingbook.com/assets/www.myphonicshandwritingbook.com/yY-to-be-watermarked-Vic-64c2e5a992.pdf",
+      "name": "yY-to-be-watermarked-Vic.pdf",
+      "url": "https://www.myphonicshandwritingbook.com/s/yY-to-be-watermarked-Vic.pdf"
+    }
+  ],
+  "site_image_count_unique": 15,
+  "site_images": [
+    {
+      "dimensions": {
+        "format": "PNG",
+        "height": 1600,
+        "width": 1066
+      },
+      "name": "3.png",
+      "preferred_bytes": 2782128,
+      "preferred_local_path": "source-assets/myphonicshandwritingbook.com/assets/images.squarespace-cdn.com/3-76c9915b04.png",
+      "source_url": "https://images.squarespace-cdn.com/content/v1/68c526c47df0e233531f6784/1757755951410-XV9MK932O626STRHFQN3/3.png",
+      "sources": [
+        "https://www.myphonicshandwritingbook.com/gallery",
+        "sitemap.xml"
+      ],
+      "variant_count": 8
+    },
+    {
+      "dimensions": {
+        "format": "WEBP",
+        "height": 1600,
+        "width": 1066
+      },
+      "name": "5.png",
+      "preferred_bytes": 1273604,
+      "preferred_local_path": "source-assets/myphonicshandwritingbook.com/assets/images.squarespace-cdn.com/5-32fe6c122e.png",
+      "source_url": "https://images.squarespace-cdn.com/content/v1/68c526c47df0e233531f6784/1757755878004-I0H3ZNTQGRPLPFRWDAMM/5.png",
+      "sources": [
+        "https://www.myphonicshandwritingbook.com/gallery",
+        "sitemap.xml"
+      ],
+      "variant_count": 8
+    },
+    {
+      "dimensions": {
+        "format": "WEBP",
+        "height": 1600,
+        "width": 1066
+      },
+      "name": "7.png",
+      "preferred_bytes": 1254576,
+      "preferred_local_path": "source-assets/myphonicshandwritingbook.com/assets/images.squarespace-cdn.com/7-d8b304b832.png",
+      "source_url": "https://images.squarespace-cdn.com/content/v1/68c526c47df0e233531f6784/1757755779816-V43G9QLAQAFR5TEX48AR/7.png",
+      "sources": [
+        "https://www.myphonicshandwritingbook.com/gallery",
+        "sitemap.xml"
+      ],
+      "variant_count": 8
+    },
+    {
+      "dimensions": {
+        "format": "PNG",
+        "height": 1600,
+        "width": 2000
+      },
+      "name": "8.png",
+      "preferred_bytes": 4914889,
+      "preferred_local_path": "source-assets/myphonicshandwritingbook.com/assets/images.squarespace-cdn.com/8-219e44737e.png",
+      "source_url": "https://images.squarespace-cdn.com/content/v1/68c526c47df0e233531f6784/67efe390-6410-4a7d-b93a-62a1ea5207d4/8.png",
+      "sources": [
+        "https://www.myphonicshandwritingbook.com/gallery",
+        "sitemap.xml"
+      ],
+      "variant_count": 8
+    },
+    {
+      "dimensions": {
+        "format": "PNG",
+        "height": 1600,
+        "width": 2000
+      },
+      "name": "9.png",
+      "preferred_bytes": 5529913,
+      "preferred_local_path": "source-assets/myphonicshandwritingbook.com/assets/images.squarespace-cdn.com/9-11b3e82322.png",
+      "source_url": "https://images.squarespace-cdn.com/content/v1/68c526c47df0e233531f6784/f2766150-2590-4e21-a602-fdde89c4c6fb/9.png",
+      "sources": [
+        "https://www.myphonicshandwritingbook.com/gallery",
+        "sitemap.xml"
+      ],
+      "variant_count": 8
+    },
+    {
+      "dimensions": {
+        "format": "JPEG",
+        "height": 842,
+        "width": 595
+      },
+      "name": "Book A Vic Curric August 2025 copy 2.jpg",
+      "preferred_bytes": 53482,
+      "preferred_local_path": "source-assets/myphonicshandwritingbook.com/assets/images.squarespace-cdn.com/Book-A-Vic-Curric-August-2025-copy-2-5e8ee96824.jpg",
+      "source_url": "https://images.squarespace-cdn.com/content/v1/68c526c47df0e233531f6784/5330d7d2-8cc0-49fa-92ab-ea74052062c2/Book+A+Vic+Curric+August+2025+copy+2.jpg",
+      "sources": [
+        "https://www.myphonicshandwritingbook.com/products",
+        "sitemap.xml"
+      ],
+      "variant_count": 8
+    },
+    {
+      "dimensions": {
+        "format": "JPEG",
+        "height": 842,
+        "width": 595
+      },
+      "name": "Book B Vic Curric August 2025-2 copy.jpg",
+      "preferred_bytes": 62309,
+      "preferred_local_path": "source-assets/myphonicshandwritingbook.com/assets/images.squarespace-cdn.com/Book-B-Vic-Curric-August-2025-2-copy-0f119f4e02.jpg",
+      "source_url": "https://images.squarespace-cdn.com/content/v1/68c526c47df0e233531f6784/24fd971f-23b8-47b9-808d-edf310d9d480/Book+B+Vic+Curric+August+2025-2+copy.jpg",
+      "sources": [
+        "https://www.myphonicshandwritingbook.com/products",
+        "sitemap.xml"
+      ],
+      "variant_count": 8
+    },
+    {
+      "dimensions": {
+        "format": "PNG",
+        "height": 1024,
+        "width": 1536
+      },
+      "name": "ChatGPT Image Jan 13, 2026 at 10_26_37 AM.png",
+      "preferred_bytes": 3393129,
+      "preferred_local_path": "source-assets/myphonicshandwritingbook.com/assets/images.squarespace-cdn.com/ChatGPT-Image-Jan-13-2026-at-10_26_37-AM-c45aa36bc2.png",
+      "source_url": "https://images.squarespace-cdn.com/content/v1/68c526c47df0e233531f6784/77bb15f7-6483-4122-9b5b-e8d0b486443e/ChatGPT+Image+Jan+13%2C+2026+at+10_26_37+AM.png",
+      "sources": [
+        "https://www.myphonicshandwritingbook.com/gallery",
+        "sitemap.xml"
+      ],
+      "variant_count": 8
+    },
+    {
+      "dimensions": {
+        "format": "PNG",
+        "height": 1156,
+        "width": 810
+      },
+      "name": "Screenshot 2025-09-25 at 11.55.42 am.png",
+      "preferred_bytes": 141277,
+      "preferred_local_path": "source-assets/myphonicshandwritingbook.com/assets/images.squarespace-cdn.com/Screenshot-2025-09-25-at-11.55.42-am-fad119247c.png",
+      "source_url": "https://images.squarespace-cdn.com/content/v1/68c526c47df0e233531f6784/a0a24b53-7f5c-4de8-8659-f1da9850598f/Screenshot+2025-09-25+at+11.55.42+am.png",
+      "sources": [
+        "https://www.myphonicshandwritingbook.com/products",
+        "sitemap.xml"
+      ],
+      "variant_count": 8
+    },
+    {
+      "dimensions": {
+        "format": "PNG",
+        "height": 1155,
+        "width": 823
+      },
+      "name": "Screenshot 2025-09-25 at 11.55.48 am.png",
+      "preferred_bytes": 162810,
+      "preferred_local_path": "source-assets/myphonicshandwritingbook.com/assets/images.squarespace-cdn.com/Screenshot-2025-09-25-at-11.55.48-am-e5297a822e.png",
+      "source_url": "https://images.squarespace-cdn.com/content/v1/68c526c47df0e233531f6784/e5e3c0fb-ae93-4e5d-9a8e-8bc5d801b805/Screenshot+2025-09-25+at+11.55.48+am.png",
+      "sources": [
+        "https://www.myphonicshandwritingbook.com/products",
+        "sitemap.xml"
+      ],
+      "variant_count": 8
+    },
+    {
+      "dimensions": {
+        "format": "WEBP",
+        "height": 829,
+        "width": 2500
+      },
+      "name": "Screenshot 2025-09-25 at 12.34.47 pm.png",
+      "preferred_bytes": 101806,
+      "preferred_local_path": "source-assets/myphonicshandwritingbook.com/assets/images.squarespace-cdn.com/Screenshot-2025-09-25-at-12.34.47-pm-c8e9f0ab03.png",
+      "source_url": "https://images.squarespace-cdn.com/content/v1/68c526c47df0e233531f6784/1101826b-e163-41f1-a041-e26ffc7adf3e/Screenshot+2025-09-25+at+12.34.47+pm.png",
+      "sources": [
+        "https://www.myphonicshandwritingbook.com/",
+        "https://www.myphonicshandwritingbook.com/about",
+        "https://www.myphonicshandwritingbook.com/contact",
+        "https://www.myphonicshandwritingbook.com/downloads-1",
+        "https://www.myphonicshandwritingbook.com/gallery",
+        "https://www.myphonicshandwritingbook.com/products"
+      ],
+      "variant_count": 8
+    },
+    {
+      "dimensions": {
+        "format": "PNG",
+        "height": 752,
+        "width": 536
+      },
+      "name": "Screenshot 2025-09-25 at 12.48.21 pm.png",
+      "preferred_bytes": 759570,
+      "preferred_local_path": "source-assets/myphonicshandwritingbook.com/assets/images.squarespace-cdn.com/Screenshot-2025-09-25-at-12.48.21-pm-6bb0fb92d2.png",
+      "source_url": "https://images.squarespace-cdn.com/content/v1/68c526c47df0e233531f6784/b42c45e1-601a-412e-b5af-8d53f4aae6d5/Screenshot+2025-09-25+at+12.48.21+pm.png",
+      "sources": [
+        "https://www.myphonicshandwritingbook.com/contact",
+        "sitemap.xml"
+      ],
+      "variant_count": 8
+    },
+    {
+      "dimensions": {
+        "format": "PNG",
+        "height": 494,
+        "width": 476
+      },
+      "name": "Screenshot 2025-09-25 at 12.51.50 pm.png",
+      "preferred_bytes": 346717,
+      "preferred_local_path": "source-assets/myphonicshandwritingbook.com/assets/images.squarespace-cdn.com/Screenshot-2025-09-25-at-12.51.50-pm-68caec3751.png",
+      "source_url": "https://images.squarespace-cdn.com/content/v1/68c526c47df0e233531f6784/e1968ba4-8269-406e-a0b1-81b1aec12e73/Screenshot+2025-09-25+at+12.51.50+pm.png",
+      "sources": [
+        "https://www.myphonicshandwritingbook.com/",
+        "https://www.myphonicshandwritingbook.com/about",
+        "sitemap.xml"
+      ],
+      "variant_count": 8
+    },
+    {
+      "dimensions": {
+        "format": "PNG",
+        "height": 730,
+        "width": 1170
+      },
+      "name": "Screenshot 2025-09-26 at 10.24.24 am.png",
+      "preferred_bytes": 1222727,
+      "preferred_local_path": "source-assets/myphonicshandwritingbook.com/assets/images.squarespace-cdn.com/Screenshot-2025-09-26-at-10.24.24-am-ad49dfd780.png",
+      "source_url": "https://images.squarespace-cdn.com/content/v1/68c526c47df0e233531f6784/4f201384-b583-4360-829a-1c894fd54990/Screenshot+2025-09-26+at+10.24.24+am.png",
+      "sources": [
+        "https://www.myphonicshandwritingbook.com/",
+        "https://www.myphonicshandwritingbook.com/about",
+        "sitemap.xml"
+      ],
+      "variant_count": 8
+    },
+    {
+      "dimensions": {
+        "format": "PNG",
+        "height": 234,
+        "width": 1674
+      },
+      "name": "Screenshot 2025-09-26 at 10.37.42 am.png",
+      "preferred_bytes": 61746,
+      "preferred_local_path": "source-assets/myphonicshandwritingbook.com/assets/images.squarespace-cdn.com/Screenshot-2025-09-26-at-10.37.42-am-d4f30a6ee8.png",
+      "source_url": "https://images.squarespace-cdn.com/content/v1/68c526c47df0e233531f6784/84efd921-fec0-4e2c-8531-ab79d15b45a2/Screenshot+2025-09-26+at+10.37.42+am.png",
+      "sources": [
+        "https://www.myphonicshandwritingbook.com/",
+        "https://www.myphonicshandwritingbook.com/about",
+        "https://www.myphonicshandwritingbook.com/contact",
+        "https://www.myphonicshandwritingbook.com/downloads-1",
+        "https://www.myphonicshandwritingbook.com/gallery",
+        "https://www.myphonicshandwritingbook.com/products"
+      ],
+      "variant_count": 2
+    }
+  ]
+}
