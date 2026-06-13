@@ -1,0 +1,77 @@
+{{ 'mphb-custom.css' | asset_url | stylesheet_tag }}
+
+<section class="mphb-section mphb-preview" data-section-name="mphb-preview-gallery">
+  <div class="mphb-page-width">
+    <div class="mphb-section-header">
+      <p class="mphb-eyebrow">{{ section.settings.eyebrow }}</p>
+      <h2 class="mphb-heading mphb-heading--lg">{{ section.settings.heading }}</h2>
+      <div class="mphb-subheading">{{ section.settings.subheading }}</div>
+    </div>
+
+    <div class="mphb-grid mphb-preview__gallery">
+      <div class="mphb-card mphb-preview__tile">
+        <img class="mphb-media" src="{{ 'mphb-book-a-nsw.png' | asset_url }}" alt="Book A cover" width="405" height="578" loading="lazy">
+        <span>Book A covers Foundation sounds</span>
+      </div>
+      <div class="mphb-card mphb-preview__tile">
+        <img class="mphb-media" src="{{ 'mphb-workbook-open-1.png' | asset_url }}" alt="Student workbook spread" width="1066" height="1600" loading="lazy">
+        <span>Words students can decode</span>
+      </div>
+      <div class="mphb-card mphb-preview__tile">
+        <img class="mphb-media" src="{{ 'mphb-workbook-open-2.png' | asset_url }}" alt="Classroom workbook practice" width="2000" height="1600" loading="lazy">
+        <span>Sentence practice with support</span>
+      </div>
+      <div class="mphb-card mphb-preview__tile">
+        <img class="mphb-media" src="{{ 'mphb-workbook-open-3.png' | asset_url }}" alt="Student writing in My Phonics Handwriting Book" width="2000" height="1600" loading="lazy">
+        <span>Student results you can see</span>
+      </div>
+    </div>
+
+    <div class="mphb-button-row" style="justify-content:center">
+      {%- assign sample_link = section.settings.button_link | default: '/pages/downloads' -%}
+      <a class="mphb-button mphb-button--secondary" href="{{ sample_link }}">{{ section.settings.button_label }}</a>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "MPHB sample preview",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Inside the books"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "High-quality, engaging activities your students will love"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "<p>Every page is intentionally simple, decodable and easy to teach so handwriting time stays focused.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Download sample pages"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "MPHB sample preview"
+    }
+  ]
+}
+{% endschema %}

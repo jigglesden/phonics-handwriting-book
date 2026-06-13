@@ -1,0 +1,67 @@
+{{ 'mphb-custom.css' | asset_url | stylesheet_tag }}
+
+<section class="mphb-section mphb-founder" data-section-name="mphb-founder-proof">
+  <div class="mphb-page-width">
+    <div class="mphb-grid mphb-founder__grid">
+      <div class="mphb-card mphb-founder__image">
+        <img class="mphb-media" src="{{ 'mphb-authors.png' | asset_url }}" alt="Jac Dominey and Ash Feehely" width="1170" height="730" loading="lazy">
+      </div>
+      <div>
+        <p class="mphb-eyebrow">{{ section.settings.eyebrow }}</p>
+        <h2 class="mphb-heading mphb-heading--lg">{{ section.settings.heading }}</h2>
+        <div class="mphb-subheading">{{ section.settings.copy }}</div>
+        <ul class="mphb-check-list">
+          <li>Created by educators with classroom leadership experience</li>
+          <li>Designed around explicit handwriting and phonics instruction</li>
+          <li>Built to reduce planning load while improving lesson clarity</li>
+        </ul>
+        {%- assign link = section.settings.button_link | default: '/pages/contact' -%}
+        <div class="mphb-button-row">
+          <a class="mphb-button mphb-button--secondary" href="{{ link }}">{{ section.settings.button_label }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "MPHB founder proof",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Created by educators, for educators"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Built by teachers who know handwriting instruction needs to be simple and explicit"
+    },
+    {
+      "type": "richtext",
+      "id": "copy",
+      "label": "Copy",
+      "default": "<p>Jac Dominey and Ash Feehely created My Phonics Handwriting Book to help teachers confidently align handwriting practice with the phonics knowledge students are learning.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Read our story"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "MPHB founder proof"
+    }
+  ]
+}
+{% endschema %}

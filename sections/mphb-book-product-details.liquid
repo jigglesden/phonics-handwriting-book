@@ -1,0 +1,92 @@
+{{ 'mphb-custom.css' | asset_url | stylesheet_tag }}
+
+<section class="mphb-section mphb-product-extra" data-section-name="mphb-book-product-details">
+  <div class="mphb-page-width">
+    <div class="mphb-section-header">
+      <p class="mphb-eyebrow">{{ section.settings.eyebrow }}</p>
+      <h2 class="mphb-heading mphb-heading--lg">
+        {%- if product.title != blank -%}
+          Make {{ product.title }} part of your daily handwriting routine
+        {%- else -%}
+          Make handwriting part of your daily phonics routine
+        {%- endif -%}
+      </h2>
+      <div class="mphb-subheading">{{ section.settings.intro }}</div>
+    </div>
+
+    <div class="mphb-grid mphb-product-extra__grid">
+      <div class="mphb-card mphb-product-extra__panel">
+        <h3 class="mphb-heading mphb-heading--md">{{ section.settings.left_heading }}</h3>
+        <ul class="mphb-check-list">
+          <li>Explicit formation practice with consistent routines</li>
+          <li>Decodable words and sentences where possible</li>
+          <li>Built-in review to support automaticity</li>
+          <li>Designed for short, focused handwriting lessons</li>
+        </ul>
+      </div>
+
+      <div class="mphb-card mphb-product-extra__panel">
+        <h3 class="mphb-heading mphb-heading--md">{{ section.settings.right_heading }}</h3>
+        <ul class="mphb-check-list">
+          <li>Foundation and early primary classrooms</li>
+          <li>Teachers using systematic phonics instruction</li>
+          <li>Schools wanting handwriting to reinforce literacy</li>
+          <li>Teams looking for a shared scope and sequence</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mphb-button-row" style="justify-content:center">
+      {%- assign sample_link = section.settings.sample_link | default: '/pages/downloads' -%}
+      <a class="mphb-button mphb-button--secondary" href="{{ sample_link }}">{{ section.settings.sample_label }}</a>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "MPHB book product details",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Book details"
+    },
+    {
+      "type": "richtext",
+      "id": "intro",
+      "label": "Intro",
+      "default": "<p>Use this book for explicit, phonics-aligned handwriting practice that fits into a short daily literacy routine.</p>"
+    },
+    {
+      "type": "text",
+      "id": "left_heading",
+      "label": "Left heading",
+      "default": "What is inside"
+    },
+    {
+      "type": "text",
+      "id": "right_heading",
+      "label": "Right heading",
+      "default": "Best for"
+    },
+    {
+      "type": "text",
+      "id": "sample_label",
+      "label": "Sample button label",
+      "default": "Download sample pages"
+    },
+    {
+      "type": "url",
+      "id": "sample_link",
+      "label": "Sample button link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "MPHB book product details"
+    }
+  ]
+}
+{% endschema %}

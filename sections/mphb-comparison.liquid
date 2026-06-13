@@ -1,0 +1,76 @@
+{{ 'mphb-custom.css' | asset_url | stylesheet_tag }}
+
+<section class="mphb-section mphb-comparison" data-section-name="mphb-comparison">
+  <div class="mphb-page-width">
+    <div class="mphb-section-header">
+      <p class="mphb-eyebrow">{{ section.settings.eyebrow }}</p>
+      <h2 class="mphb-heading mphb-heading--lg">{{ section.settings.heading }}</h2>
+      <div class="mphb-subheading">{{ section.settings.subheading }}</div>
+    </div>
+
+    <div class="mphb-grid mphb-grid--2">
+      <div class="mphb-card mphb-comparison__panel mphb-comparison__panel--risk">
+        <h3>{{ section.settings.left_heading }}</h3>
+        <ul class="mphb-x-list">
+          <li>Formation practice disconnected from phonics</li>
+          <li>Words students cannot yet decode independently</li>
+          <li>Extra planning to match handwriting to scope and sequence</li>
+          <li>Less opportunity to reinforce speech-to-print knowledge</li>
+        </ul>
+      </div>
+
+      <div class="mphb-card mphb-comparison__panel mphb-comparison__panel--solution">
+        <h3>{{ section.settings.right_heading }}</h3>
+        <ul class="mphb-check-list">
+          <li>Letter formation aligned to phonics instruction</li>
+          <li>Decodable words and sentences throughout</li>
+          <li>Simple teacher routines for daily handwriting practice</li>
+          <li>Designed to strengthen reading, spelling and writing together</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "MPHB comparison",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Most handwriting programs miss a critical opportunity"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Turn handwriting practice into phonics revision"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "<p>Students often practise handwriting with words and spelling patterns they have not yet been taught. These books intentionally connect formation practice with the phonics knowledge students are learning.</p>"
+    },
+    {
+      "type": "text",
+      "id": "left_heading",
+      "label": "Left heading",
+      "default": "Traditional handwriting programs"
+    },
+    {
+      "type": "text",
+      "id": "right_heading",
+      "label": "Right heading",
+      "default": "My Phonics Handwriting Book"
+    }
+  ],
+  "presets": [
+    {
+      "name": "MPHB comparison"
+    }
+  ]
+}
+{% endschema %}
