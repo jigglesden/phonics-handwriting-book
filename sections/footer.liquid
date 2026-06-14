@@ -4,6 +4,7 @@
 {{ 'component-list-menu.css' | asset_url | stylesheet_tag }}
 {{ 'component-list-payment.css' | asset_url | stylesheet_tag }}
 {{ 'component-list-social.css' | asset_url | stylesheet_tag }}
+{{ 'mphb-custom.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .footer {
@@ -299,6 +300,13 @@
     </div>
     <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
       <div class="footer__copyright caption">
+        <ul class="mphb-footer-quick-links">
+          <li>
+            <a class="cta-allied-health-footer" data-cta="allied-health-footer" href="/pages/allied-health">
+              Allied Health
+            </a>
+          </li>
+        </ul>
         <small class="copyright__content"
           >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
         </small>

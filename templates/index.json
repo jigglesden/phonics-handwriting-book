@@ -97,6 +97,21 @@
       ],
       "settings": {}
     },
+    "mphb_audience_selector": {
+      "type": "mphb-audience-selector",
+      "settings": {
+        "heading": "Who Is This Resource For?",
+        "subheading": "<p>Choose the pathway most relevant to you.</p>",
+        "parent_title": "Parents & Families",
+        "parent_description": "Support your child's handwriting confidence and literacy development at home.",
+        "parent_button": "Shop Now",
+        "parent_link": "/products/book-a-nsw-font",
+        "allied_title": "Therapists & Educators",
+        "allied_description": "Discover how My Phonics Handwriting Book can support intervention, therapy and classroom instruction.",
+        "allied_button": "Learn More",
+        "allied_link": "/pages/allied-health"
+      }
+    },
     "mphb_comparison": {
       "type": "mphb-comparison",
       "settings": {}
@@ -188,6 +203,15 @@
         "book_c"
       ],
       "settings": {}
+    },
+    "mphb_allied_banner": {
+      "type": "mphb-allied-health-banner",
+      "settings": {
+        "heading": "Used By Therapists, Educators And Families",
+        "copy": "Looking for a structured handwriting resource for intervention, literacy support or therapy sessions?",
+        "button_label": "Explore Allied Health Solutions",
+        "button_link": "/pages/allied-health"
+      }
     },
     "mphb_benefits": {
       "type": "mphb-benefits",
@@ -318,10 +342,12 @@
   "order": [
     "mphb_hero",
     "mphb_proof_strip",
+    "mphb_audience_selector",
     "mphb_comparison",
     "mphb_learning_link",
     "mphb_preview",
     "mphb_book_finder",
+    "mphb_allied_banner",
     "mphb_benefits",
     "mphb_testimonials",
     "mphb_founder",

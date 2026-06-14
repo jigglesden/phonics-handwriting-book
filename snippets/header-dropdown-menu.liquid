@@ -6,6 +6,15 @@
 {% endcomment %}
 
 <nav class="header__inline-menu">
+  {%- liquid
+    assign has_allied_health_link = false
+    for link in section.settings.menu.links
+      assign link_title_downcase = link.title | downcase
+      if link_title_downcase == 'allied health' or link.url == '/pages/allied-health'
+        assign has_allied_health_link = true
+      endif
+    endfor
+  -%}
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
       <li>
@@ -98,6 +107,56 @@
           </a>
         {%- endif -%}
       </li>
+      {%- liquid
+        assign link_title_downcase = link.title | downcase
+        assign insert_after_primary_shop_link = false
+        if link_title_downcase == 'shop' or link_title_downcase == 'catalog' or link_title_downcase == 'books' or link.url contains '/collections'
+          assign insert_after_primary_shop_link = true
+        endif
+      -%}
+      {%- if has_allied_health_link == false and insert_after_primary_shop_link -%}
+        <li>
+          <a
+            id="HeaderMenu-allied-health"
+            href="/pages/allied-health"
+            class="header__menu-item list-menu__item link link--text focus-inset cta-allied-health-nav"
+            data-cta="allied-health-nav"
+            {% if request.path == '/pages/allied-health' %}
+              aria-current="page"
+            {% endif %}
+          >
+            <span
+              {%- if request.path == '/pages/allied-health' %}
+                class="header__active-menu-item"
+              {% endif %}
+            >
+              Allied Health
+            </span>
+          </a>
+        </li>
+        {%- assign has_allied_health_link = true -%}
+      {%- endif -%}
     {%- endfor -%}
+    {%- if has_allied_health_link == false -%}
+      <li>
+        <a
+          id="HeaderMenu-allied-health"
+          href="/pages/allied-health"
+          class="header__menu-item list-menu__item link link--text focus-inset cta-allied-health-nav"
+          data-cta="allied-health-nav"
+          {% if request.path == '/pages/allied-health' %}
+            aria-current="page"
+          {% endif %}
+        >
+          <span
+            {%- if request.path == '/pages/allied-health' %}
+              class="header__active-menu-item"
+            {% endif %}
+          >
+            Allied Health
+          </span>
+        </a>
+      </li>
+    {%- endif -%}
   </ul>
 </nav>

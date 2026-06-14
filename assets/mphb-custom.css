@@ -652,6 +652,107 @@
   padding: 2.4rem;
 }
 
+.mphb-audience {
+  padding: 5.8rem 0;
+  background: linear-gradient(180deg, #fff 0%, #f7fbff 100%);
+}
+
+.mphb-audience__grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.mphb-audience-card {
+  display: grid;
+  gap: 1.4rem;
+  padding: 3rem;
+}
+
+.mphb-audience-card h3 {
+  margin: 0;
+  color: var(--mphb-navy);
+  font-size: clamp(2.2rem, 2.6vw, 3.2rem);
+}
+
+.mphb-audience-card p {
+  margin: 0;
+  color: var(--mphb-muted);
+  font-size: 1.55rem;
+  line-height: 1.55;
+}
+
+.mphb-allied-banner {
+  padding: 4.4rem 0;
+  background: #f3faf6;
+}
+
+.mphb-allied-banner__wrap {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  align-items: center;
+  padding: 2.8rem;
+  border-radius: 2.4rem;
+  background: #fff;
+  border: .1rem solid #d9ece1;
+  box-shadow: 0 1.4rem 3.4rem rgba(20, 57, 102, .06);
+}
+
+.mphb-allied-banner__wrap h2 {
+  margin: 0;
+  color: var(--mphb-navy);
+  font-size: clamp(2.2rem, 3vw, 3.8rem);
+}
+
+.mphb-allied-banner__wrap p {
+  margin: .8rem 0 0;
+  color: var(--mphb-muted);
+  font-size: 1.55rem;
+  line-height: 1.5;
+}
+
+.mphb-allied-page {
+  padding: 5.8rem 0;
+}
+
+.mphb-allied-page--hero {
+  background:
+    radial-gradient(circle at 82% 18%, rgba(61, 155, 108, .18), transparent 22rem),
+    linear-gradient(180deg, #f7fbff 0%, #fff 82%);
+}
+
+.mphb-allied-page__hero {
+  grid-template-columns: 1fr .85fr;
+  align-items: center;
+}
+
+.mphb-allied-page__media {
+  overflow: hidden;
+}
+
+.mphb-allied-page__media img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.mphb-allied-page__panel {
+  padding: 2.6rem;
+}
+
+.mphb-footer-quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.mphb-footer-quick-links a {
+  color: rgba(var(--color-foreground), .75);
+  text-decoration: underline;
+  text-underline-offset: .3rem;
+}
+
 @media screen and (max-width: 989px) {
   .mphb-grid--4,
   .mphb-proof-strip__grid,
@@ -662,7 +763,9 @@
   .mphb-hero__grid,
   .mphb-founder__grid,
   .mphb-product-extra__grid,
-  .mphb-final-cta__wrap {
+  .mphb-final-cta__wrap,
+  .mphb-allied-banner__wrap,
+  .mphb-allied-page__hero {
     grid-template-columns: 1fr;
   }
 
@@ -687,7 +790,8 @@
   .mphb-books__grid,
   .mphb-link__cards,
   .mphb-preview__gallery,
-  .mphb-proof-strip__grid {
+  .mphb-proof-strip__grid,
+  .mphb-audience__grid {
     grid-template-columns: 1fr;
   }
 

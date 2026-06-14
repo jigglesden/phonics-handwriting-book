@@ -1,0 +1,52 @@
+{{ 'mphb-custom.css' | asset_url | stylesheet_tag }}
+
+<section class="mphb-section mphb-allied-banner" data-section-name="mphb-allied-health-banner">
+  <div class="mphb-page-width">
+    <div class="mphb-allied-banner__wrap">
+      <div>
+        <h2>{{ section.settings.heading }}</h2>
+        <p>{{ section.settings.copy }}</p>
+      </div>
+      {%- assign banner_link = section.settings.button_link | default: '/pages/allied-health' -%}
+      <a class="mphb-button cta-allied-health-banner" data-cta="allied-health-banner" href="{{ banner_link }}">
+        {{ section.settings.button_label }}
+      </a>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "MPHB Allied Health banner",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Headline",
+      "default": "Used By Therapists, Educators And Families"
+    },
+    {
+      "type": "textarea",
+      "id": "copy",
+      "label": "Copy",
+      "default": "Looking for a structured handwriting resource for intervention, literacy support or therapy sessions?"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button",
+      "default": "Explore Allied Health Solutions"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "MPHB Allied Health banner"
+    }
+  ]
+}
+{% endschema %}

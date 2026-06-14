@@ -1,8 +1,16 @@
 {%- liquid
-  assign og_title = page_title | default: shop.name
+  assign meta_page_title = page_title
+  assign meta_page_description = page_description
+
+  if template.suffix == 'allied-health'
+    assign meta_page_title = 'Handwriting Resource for Occupational Therapists, Speech Pathologists & Educators'
+    assign meta_page_description = 'A structured handwriting resource designed to support letter formation, literacy development and phonics instruction across therapy, intervention and classroom settings.'
+  endif
+
+  assign og_title = meta_page_title | default: shop.name
   assign og_url = canonical_url | default: request.origin
   assign og_type = 'website'
-  assign og_description = page_description | default: shop.description | default: shop.name
+  assign og_description = meta_page_description | default: shop.description | default: shop.name
 
   if request.page_type == 'product'
     assign og_type = 'product'
