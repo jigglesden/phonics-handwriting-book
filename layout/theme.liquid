@@ -15,15 +15,25 @@
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
 
+    {%- liquid
+      assign seo_page_title = page_title
+      assign seo_page_description = page_description
+
+      if template.suffix == 'allied-health' or request.path == '/pages/allied-health'
+        assign seo_page_title = 'Handwriting Resource for Occupational Therapists, Speech Pathologists & Educators'
+        assign seo_page_description = 'A structured handwriting resource designed to support letter formation, literacy development and phonics instruction across therapy, intervention and classroom settings.'
+      endif
+    -%}
+
     <title>
-      {{ page_title }}
+      {{ seo_page_title }}
       {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
       {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
-      {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+      {%- unless seo_page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
     </title>
 
-    {% if page_description %}
-      <meta name="description" content="{{ page_description | escape }}">
+    {% if seo_page_description %}
+      <meta name="description" content="{{ seo_page_description | escape }}">
     {% endif %}
 
     {% render 'meta-tags' %}

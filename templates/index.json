@@ -1,75 +1,357 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "mphb_hero": {
+      "type": "mphb-hero",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "benefit_1": {
+          "type": "benefit",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "text": "Aligned with structured literacy approaches"
           }
         },
-        "button": {
-          "type": "buttons",
+        "benefit_2": {
+          "type": "benefit",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "text": "Uses decodable words students can actually read"
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Classroom-tested by Australian educators"
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Suitable for Foundation and early primary years"
           }
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "image_behavior": "none",
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "eyebrow": "Phonics-aligned handwriting workbooks",
+        "heading": "Handwriting Practice That Reinforces Phonics",
+        "subheading": "<p>Decodable handwriting workbooks designed to strengthen letter formation, reading and spelling through explicit phonics-aligned practice.</p>",
+        "primary_label": "View the books",
+        "primary_link": "shopify://collections/all",
+        "secondary_label": "Download sample pages",
+        "secondary_link": "/pages/downloads"
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "mphb_proof_strip": {
+      "type": "mphb-proof-strip",
+      "blocks": {
+        "proof_1": {
+          "type": "proof",
+          "settings": {
+            "icon": "01",
+            "heading": "Experienced educators",
+            "text": "Created by literacy specialists"
+          }
+        },
+        "proof_2": {
+          "type": "proof",
+          "settings": {
+            "icon": "02",
+            "heading": "Classroom tested",
+            "text": "Built around daily instruction"
+          }
+        },
+        "proof_3": {
+          "type": "proof",
+          "settings": {
+            "icon": "03",
+            "heading": "Phonics aligned",
+            "text": "Decodable practice throughout"
+          }
+        },
+        "proof_4": {
+          "type": "proof",
+          "settings": {
+            "icon": "04",
+            "heading": "Explicit formation",
+            "text": "Clear, repeatable routines"
+          }
+        },
+        "proof_5": {
+          "type": "proof",
+          "settings": {
+            "icon": "05",
+            "heading": "Teacher approved",
+            "text": "Supports confident lessons"
+          }
+        }
+      },
+      "block_order": [
+        "proof_1",
+        "proof_2",
+        "proof_3",
+        "proof_4",
+        "proof_5"
+      ],
+      "settings": {}
+    },
+    "mphb_audience_selector": {
+      "type": "mphb-audience-selector",
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "padding_top": 44,
-        "padding_bottom": 36
+        "heading": "Who Is This Resource For?",
+        "subheading": "<p>Choose the pathway most relevant to you.</p>",
+        "parent_title": "Parents & Families",
+        "parent_description": "Support your child's handwriting confidence and literacy development at home.",
+        "parent_button": "Shop Now",
+        "parent_link": "/products/book-a-nsw-font",
+        "allied_title": "Therapists & Educators",
+        "allied_description": "Discover how My Phonics Handwriting Book can support intervention, therapy and classroom instruction.",
+        "allied_button": "Learn More",
+        "allied_link": "/pages/allied-health"
+      }
+    },
+    "mphb_comparison": {
+      "type": "mphb-comparison",
+      "settings": {}
+    },
+    "mphb_learning_link": {
+      "type": "mphb-link-framework",
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "heading": "Decodable practice",
+            "text": "Students only practise words aligned with taught phonics concepts."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "heading": "Explicit letter formation",
+            "text": "Consistent modelling and tracing support accurate formation."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "heading": "Stronger literacy outcomes",
+            "text": "Writing routines reinforce spelling, reading and transcription."
+          }
+        }
+      },
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3"
+      ],
+      "settings": {}
+    },
+    "mphb_preview": {
+      "type": "mphb-preview-gallery",
+      "settings": {
+        "button_link": "/pages/downloads"
+      }
+    },
+    "mphb_book_finder": {
+      "type": "mphb-book-finder",
+      "blocks": {
+        "book_a": {
+          "type": "book",
+          "settings": {
+            "image": "mphb-book-a-nsw.png",
+            "title": "Book A",
+            "level": "Foundation / Prep",
+            "font": "NSW, Vic, Tas",
+            "description": "For students learning early sound-letter correspondences, CVC words and foundational handwriting routines.",
+            "accent": "#8ebfae",
+            "button_label": "Explore Book A",
+            "link": "/products/book-a-nsw-font"
+          }
+        },
+        "book_b": {
+          "type": "book",
+          "settings": {
+            "image": "mphb-book-b-nsw.png",
+            "title": "Book B",
+            "level": "Grade 1",
+            "font": "NSW, Vic, Tas",
+            "description": "For students moving into digraphs, extended code, sentence practice and stronger handwriting automaticity.",
+            "accent": "#7db5d8",
+            "button_label": "Explore Book B",
+            "link": "/products/book-b-nsw-font"
+          }
+        },
+        "book_c": {
+          "type": "book",
+          "settings": {
+            "image": "mphb-book-b-vic.jpg",
+            "title": "Book C",
+            "level": "Grade 2",
+            "font": "Tas",
+            "description": "For continued fluency work across vowel teams, suffixes, affixes and lower-frequency spelling patterns.",
+            "accent": "#a997d0",
+            "button_label": "Explore Book C",
+            "link": "/products/book-c-tas-font"
+          }
+        }
+      },
+      "block_order": [
+        "book_a",
+        "book_b",
+        "book_c"
+      ],
+      "settings": {}
+    },
+    "mphb_allied_banner": {
+      "type": "mphb-allied-health-banner",
+      "settings": {
+        "heading": "Used By Therapists, Educators And Families",
+        "copy": "Looking for a structured handwriting resource for intervention, literacy support or therapy sessions?",
+        "button_label": "Explore Allied Health Solutions",
+        "button_link": "/pages/allied-health"
+      }
+    },
+    "mphb_benefits": {
+      "type": "mphb-benefits",
+      "blocks": {
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "heading": "Reinforces phonics instruction",
+            "text": "Every activity supports the sound-spelling knowledge students are learning."
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "heading": "Reduces teacher preparation",
+            "text": "Open the book and teach from a consistent daily routine."
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "heading": "Structured progression",
+            "text": "Skills build logically from single sounds to extended code."
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "heading": "Classroom tested",
+            "text": "Created, refined and used by educators in real classrooms."
+          }
+        }
+      },
+      "block_order": [
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4"
+      ],
+      "settings": {}
+    },
+    "mphb_testimonials": {
+      "type": "mphb-testimonials",
+      "blocks": {
+        "quote_1": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "This is the first handwriting resource we have found that genuinely aligns with our phonics sequence. It has made handwriting lessons feel structured and purposeful.",
+            "citation": "Sarah M., Literacy Leader"
+          }
+        },
+        "quote_2": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "The decodable words are a game changer. My students are reading what they write, and handwriting time finally reinforces our literacy block.",
+            "citation": "James T., Year 1 Teacher"
+          }
+        },
+        "quote_3": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Beautifully designed, easy to use and so effective. A must-have for early classrooms using structured literacy.",
+            "citation": "Megan R., Assistant Principal"
+          }
+        }
+      },
+      "block_order": [
+        "quote_1",
+        "quote_2",
+        "quote_3"
+      ],
+      "settings": {}
+    },
+    "mphb_founder": {
+      "type": "mphb-founder-proof",
+      "settings": {
+        "button_link": "/pages/about"
+      }
+    },
+    "mphb_faq": {
+      "type": "mphb-faq",
+      "blocks": {
+        "faq_1": {
+          "type": "faq",
+          "settings": {
+            "question": "Which phonics programs does this align with?",
+            "answer": "<p>The books are designed to work alongside systematic phonics instruction by keeping words and sentences decodable and aligned to taught sound-spelling knowledge.</p>"
+          }
+        },
+        "faq_2": {
+          "type": "faq",
+          "settings": {
+            "question": "What year levels are the books suitable for?",
+            "answer": "<p>Book A supports Foundation/Prep, Book B supports Grade 1, and Book C supports Grade 2 extension and review depending on your school sequence.</p>"
+          }
+        },
+        "faq_3": {
+          "type": "faq",
+          "settings": {
+            "question": "Are sample pages available?",
+            "answer": "<p>Yes. The existing site includes sample pages, contents pages and setup downloads that can be connected to this page in Shopify.</p>"
+          }
+        },
+        "faq_4": {
+          "type": "faq",
+          "settings": {
+            "question": "Do you offer school orders or bulk pricing?",
+            "answer": "<p>The current site invites schools to get in touch for handwriting scope and sequence support. Bulk ordering details should be confirmed before launch.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4"
+      ],
+      "settings": {}
+    },
+    "mphb_final_cta": {
+      "type": "mphb-final-cta",
+      "settings": {
+        "primary_link": "shopify://collections/all",
+        "secondary_link": "/pages/downloads"
       }
     }
   },
   "order": [
-    "image_banner",
-    "featured_collection"
+    "mphb_hero",
+    "mphb_proof_strip",
+    "mphb_audience_selector",
+    "mphb_comparison",
+    "mphb_learning_link",
+    "mphb_preview",
+    "mphb_book_finder",
+    "mphb_allied_banner",
+    "mphb_benefits",
+    "mphb_testimonials",
+    "mphb_founder",
+    "mphb_faq",
+    "mphb_final_cta"
   ]
 }

@@ -1,0 +1,107 @@
+{{ 'mphb-custom.css' | asset_url | stylesheet_tag }}
+
+<section class="mphb-section mphb-audience" data-section-name="mphb-audience-selector">
+  <div class="mphb-page-width">
+    <div class="mphb-section-header">
+      <h2 class="mphb-heading mphb-heading--lg">{{ section.settings.heading }}</h2>
+      <div class="mphb-subheading">{{ section.settings.subheading }}</div>
+    </div>
+
+    <div class="mphb-grid mphb-audience__grid">
+      <article class="mphb-card mphb-audience-card">
+        <span class="mphb-icon-bubble" aria-hidden="true">01</span>
+        <h3>{{ section.settings.parent_title }}</h3>
+        <p>{{ section.settings.parent_description }}</p>
+        {%- assign parent_link = section.settings.parent_link | default: '/products/book-a-nsw-font' -%}
+        <div class="mphb-button-row">
+          <a class="mphb-button cta-parent-family-homepage" data-cta="parent-family-homepage" href="{{ parent_link }}">
+            {{ section.settings.parent_button }}
+          </a>
+        </div>
+      </article>
+
+      <article class="mphb-card mphb-audience-card">
+        <span class="mphb-icon-bubble" aria-hidden="true">02</span>
+        <h3>{{ section.settings.allied_title }}</h3>
+        <p>{{ section.settings.allied_description }}</p>
+        {%- assign allied_link = section.settings.allied_link | default: '/pages/allied-health' -%}
+        <div class="mphb-button-row">
+          <a class="mphb-button mphb-button--secondary cta-allied-health-homepage" data-cta="allied-health-homepage" href="{{ allied_link }}">
+            {{ section.settings.allied_button }}
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "MPHB audience selector",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Who Is This Resource For?"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "label": "Subheadline",
+      "default": "<p>Choose the pathway most relevant to you.</p>"
+    },
+    {
+      "type": "text",
+      "id": "parent_title",
+      "label": "Parent card title",
+      "default": "Parents & Families"
+    },
+    {
+      "type": "textarea",
+      "id": "parent_description",
+      "label": "Parent card description",
+      "default": "Support your child's handwriting confidence and literacy development at home."
+    },
+    {
+      "type": "text",
+      "id": "parent_button",
+      "label": "Parent button",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "parent_link",
+      "label": "Parent button link"
+    },
+    {
+      "type": "text",
+      "id": "allied_title",
+      "label": "Allied Health card title",
+      "default": "Therapists & Educators"
+    },
+    {
+      "type": "textarea",
+      "id": "allied_description",
+      "label": "Allied Health card description",
+      "default": "Discover how My Phonics Handwriting Book can support intervention, therapy and classroom instruction."
+    },
+    {
+      "type": "text",
+      "id": "allied_button",
+      "label": "Allied Health button",
+      "default": "Learn More"
+    },
+    {
+      "type": "url",
+      "id": "allied_link",
+      "label": "Allied Health button link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "MPHB audience selector"
+    }
+  ]
+}
+{% endschema %}

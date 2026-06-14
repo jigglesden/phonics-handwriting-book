@@ -1,1 +1,20 @@
-{"sections":{"main":{"type":"main-404","settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "allied_health_fallback": {
+      "type": "mphb-allied-health-page",
+      "settings": {
+        "primary_link": "/products/book-a-nsw-font",
+        "secondary_link": "/pages/contact",
+        "final_link": "/products/book-a-nsw-font"
+      }
+    },
+    "main": {
+      "type": "main-404",
+      "settings": {}
+    }
+  },
+  "order": [
+    "allied_health_fallback",
+    "main"
+  ]
+}

@@ -1,0 +1,149 @@
+{{ 'mphb-custom.css' | asset_url | stylesheet_tag }}
+
+{%- if template.suffix == 'allied-health' or request.path == '/pages/allied-health' -%}
+<section class="mphb-section mphb-allied-page mphb-allied-page--hero" data-section-name="mphb-allied-health-page">
+  <div class="mphb-page-width">
+    <div class="mphb-grid mphb-allied-page__hero">
+      <div>
+        <p class="mphb-eyebrow">{{ section.settings.eyebrow }}</p>
+        <h1 class="mphb-heading mphb-heading--xl">{{ section.settings.heading }}</h1>
+        <div class="mphb-subheading">{{ section.settings.subheading }}</div>
+        <div class="mphb-button-row">
+          {%- assign primary_link = section.settings.primary_link | default: '/products/book-a-nsw-font' -%}
+          {%- assign secondary_link = section.settings.secondary_link | default: '/pages/contact' -%}
+          <a class="mphb-button cta-allied-health-page" data-cta="allied-health-page-shop" href="{{ primary_link }}">
+            {{ section.settings.primary_label }}
+          </a>
+          <a class="mphb-button mphb-button--secondary cta-allied-health-page" data-cta="allied-health-page-contact" href="{{ secondary_link }}">
+            {{ section.settings.secondary_label }}
+          </a>
+        </div>
+      </div>
+      <div class="mphb-card mphb-allied-page__media">
+        <img class="mphb-media" src="{{ 'mphb-workbook-open-2.png' | asset_url }}" alt="Handwriting workbook used during classroom practice" width="2000" height="1600" loading="eager">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mphb-section mphb-allied-page" data-section-name="mphb-allied-health-outcomes">
+  <div class="mphb-page-width">
+    <div class="mphb-section-header">
+      <p class="mphb-eyebrow">Built for intervention and instruction</p>
+      <h2 class="mphb-heading mphb-heading--lg">A structured resource for handwriting, literacy and phonics support</h2>
+    </div>
+    <div class="mphb-grid mphb-grid--3">
+      <div class="mphb-card mphb-allied-page__panel">
+        <span class="mphb-icon-bubble" aria-hidden="true">01</span>
+        <h3 class="mphb-heading mphb-heading--md">Occupational therapy</h3>
+        <p class="mphb-subheading">Support pencil control, letter formation and consistent practice in therapy sessions or home programs.</p>
+      </div>
+      <div class="mphb-card mphb-allied-page__panel">
+        <span class="mphb-icon-bubble" aria-hidden="true">02</span>
+        <h3 class="mphb-heading mphb-heading--md">Speech and literacy support</h3>
+        <p class="mphb-subheading">Connect handwriting routines with speech-to-print knowledge, decodable words and phonics instruction.</p>
+      </div>
+      <div class="mphb-card mphb-allied-page__panel">
+        <span class="mphb-icon-bubble" aria-hidden="true">03</span>
+        <h3 class="mphb-heading mphb-heading--md">Classroom intervention</h3>
+        <p class="mphb-subheading">Give intervention teachers and schools a clear, repeatable resource for short, focused lessons.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mphb-section mphb-comparison" data-section-name="mphb-allied-health-comparison">
+  <div class="mphb-page-width">
+    <div class="mphb-grid mphb-grid--2">
+      <div class="mphb-card mphb-comparison__panel mphb-comparison__panel--risk">
+        <h3>Common handwriting support gaps</h3>
+        <ul class="mphb-x-list">
+          <li>Formation practice disconnected from literacy instruction</li>
+          <li>Words that do not match a student's phonics knowledge</li>
+          <li>Inconsistent practice between therapy, school and home</li>
+          <li>Extra preparation for intervention teachers and clinicians</li>
+        </ul>
+      </div>
+      <div class="mphb-card mphb-comparison__panel mphb-comparison__panel--solution">
+        <h3>How this resource helps</h3>
+        <ul class="mphb-check-list">
+          <li>Structured letter formation practice with clear routines</li>
+          <li>Decodable words and sentences that reinforce phonics</li>
+          <li>Simple activities that can be used across settings</li>
+          <li>Short lessons suitable for therapy, intervention and classrooms</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mphb-button-row" style="justify-content:center">
+      {%- assign cta_link = section.settings.final_link | default: '/products/book-a-nsw-font' -%}
+      <a class="mphb-button cta-allied-health-page" data-cta="allied-health-page-bottom" href="{{ cta_link }}">
+        {{ section.settings.final_label }}
+      </a>
+    </div>
+  </div>
+</section>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "MPHB Allied Health page",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "For therapists, intervention teachers and schools"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Handwriting support that also reinforces literacy"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "<p>My Phonics Handwriting Book gives occupational therapists, speech pathologists, intervention teachers and educators a structured way to support letter formation, phonics instruction and literacy development.</p>"
+    },
+    {
+      "type": "text",
+      "id": "primary_label",
+      "label": "Primary button label",
+      "default": "Shop the books"
+    },
+    {
+      "type": "url",
+      "id": "primary_link",
+      "label": "Primary button link"
+    },
+    {
+      "type": "text",
+      "id": "secondary_label",
+      "label": "Secondary button label",
+      "default": "Contact us"
+    },
+    {
+      "type": "url",
+      "id": "secondary_link",
+      "label": "Secondary button link"
+    },
+    {
+      "type": "text",
+      "id": "final_label",
+      "label": "Final button label",
+      "default": "Choose a book"
+    },
+    {
+      "type": "url",
+      "id": "final_link",
+      "label": "Final button link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "MPHB Allied Health page"
+    }
+  ]
+}
+{% endschema %}

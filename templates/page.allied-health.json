@@ -1,0 +1,15 @@
+{
+  "sections": {
+    "main": {
+      "type": "mphb-allied-health-page",
+      "settings": {
+        "primary_link": "/products/book-a-nsw-font",
+        "secondary_link": "/pages/contact",
+        "final_link": "/products/book-a-nsw-font"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

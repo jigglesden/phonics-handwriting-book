@@ -1,0 +1,94 @@
+{{ 'mphb-custom.css' | asset_url | stylesheet_tag }}
+
+<section class="mphb-section mphb-faq" data-section-name="mphb-faq">
+  <div class="mphb-page-width">
+    <div class="mphb-section-header">
+      <p class="mphb-eyebrow">{{ section.settings.eyebrow }}</p>
+      <h2 class="mphb-heading mphb-heading--lg">{{ section.settings.heading }}</h2>
+    </div>
+
+    <div class="mphb-faq__list">
+      {%- for block in section.blocks -%}
+        <details {{ block.shopify_attributes }}>
+          <summary>{{ block.settings.question }}</summary>
+          <div>{{ block.settings.answer }}</div>
+        </details>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "MPHB FAQ",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Frequently asked questions"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Common questions before choosing a book"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "Question",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "default": "Which phonics programs does this align with?"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer",
+          "default": "<p>The books are designed to work alongside systematic phonics instruction by keeping words and sentences decodable and aligned to taught sound-spelling knowledge.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "MPHB FAQ",
+      "blocks": [
+        {
+          "type": "faq",
+          "settings": {
+            "question": "Which phonics programs does this align with?",
+            "answer": "<p>The books are designed to work alongside systematic phonics instruction by keeping words and sentences decodable and aligned to taught sound-spelling knowledge.</p>"
+          }
+        },
+        {
+          "type": "faq",
+          "settings": {
+            "question": "What year levels are the books suitable for?",
+            "answer": "<p>Book A supports Foundation/Prep, Book B supports Grade 1, and Book C supports Grade 2 extension and review depending on your school sequence.</p>"
+          }
+        },
+        {
+          "type": "faq",
+          "settings": {
+            "question": "Are sample pages available?",
+            "answer": "<p>Yes. The existing site includes sample pages, contents pages and setup downloads that can be connected to this page in Shopify.</p>"
+          }
+        },
+        {
+          "type": "faq",
+          "settings": {
+            "question": "Do you offer school orders or bulk pricing?",
+            "answer": "<p>The current site invites schools to get in touch for handwriting scope and sequence support. Bulk ordering details should be confirmed before launch.</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
