@@ -2,7 +2,7 @@
   assign meta_page_title = page_title
   assign meta_page_description = page_description
 
-  if template.suffix == 'allied-health'
+  if template.suffix == 'allied-health' or request.path == '/pages/allied-health'
     assign meta_page_title = 'Handwriting Resource for Occupational Therapists, Speech Pathologists & Educators'
     assign meta_page_description = 'A structured handwriting resource designed to support letter formation, literacy development and phonics instruction across therapy, intervention and classroom settings.'
   endif

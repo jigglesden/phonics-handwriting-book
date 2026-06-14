@@ -1,5 +1,6 @@
 {{ 'mphb-custom.css' | asset_url | stylesheet_tag }}
 
+{%- if template.suffix == 'allied-health' or request.path == '/pages/allied-health' -%}
 <section class="mphb-section mphb-allied-page mphb-allied-page--hero" data-section-name="mphb-allied-health-page">
   <div class="mphb-page-width">
     <div class="mphb-grid mphb-allied-page__hero">
@@ -81,6 +82,7 @@
     </div>
   </div>
 </section>
+{%- endif -%}
 
 {% schema %}
 {
